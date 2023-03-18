@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunctionUp Work</title>
+
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <!-- layout1-css -->
+    <!-- <link rel="stylesheet" href="layout1.css"> -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 400;
+        }
+        .main {
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+            /* font-family: 'Roboto Condensed', sans-serif; */
+        }
+        .main-landing {
+            display: flex;
+            height: 100%;
+        }
+
+        .left-landing {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            width: 40%;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: #888;
+            font-size: 1.2rem;
+        }
+        .btn {
+            padding: 0.5rem 2rem;
+            border: 1px #ccc solid;
+            display: inline-block;
+            margin: 2rem 0 0;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #333;
+        }
+        .btn:hover {
+            background-color: #ccc;
+        }
+        .right-landing {
+            width: 60%;
+        }
+        .right-landing img {
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        #image .header {
+            padding: 1.5rem;
+            text-align: center;
+            background: #333;
+        }
+        .header h2 {
+            color: white;
+        }
+        #image img {
+            display: block;
+            width: 100%;
+        }
+        .caption {
+            padding: 0.8rem;
+            text-align: center;
+        }
+        .caption h3 {
+            display: block;
+            font-size: 1.17em;
+            margin: 1em 0;
+            font-weight: bold;
+        }
+        .caption p {
+            font-size: 16px;
+            margin-bottom: 1em;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin: auto;
+            color: #333;
+        }
+
+        .footer h3 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+        .footer p {
+            margin: 1em 0;
+        }
+        @media screen and (max-width: 822px) {
+            .main-landing {
+                flex-direction: column;
+            }
+            .right-landing{
+                order: 1;
+                width: 100%;
+            }
+            .right-landing img {
+                width: 100%;
+                height: auto;
+            }
+            .left-landing {
+                order: 2;
+                width: 100%;
+                margin: 15% 0;
+            }
+        }
+
+        @media screen and (max-width: 610px) {
+            .left-landing {
+                margin: 10% 0;
+            }
+            .left-landing h1{
+                font-size: 25px;
+            }
+            .left-landing h2 {
+                font-size: 15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-landing">
+            <div class="left-landing">
+                <h1>Shazia Photography</h1>
+                <h2 class="m-1">Beautiful Natural Photography</h2>
+                <a class="btn" href="#image">View Work</a>
+            </div>
+            <div class="right-landing">
+                <img src="https://source.unsplash.com/1600x900/?nature,rivers" alt="">
+            </div>
+        </div>
+
+        <div id="image">
+            <div class="header">
+                <h2>Our Work</h2>
+            </div>
+            <div class="imgs">
+                <img src="https://source.unsplash.com/1600x900/?nature,water" alt="">
+            </div>
+            <div class="caption">
+                <h3>Photo One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="imgs">
+                <img src="https://source.unsplash.com/1600x900/?nature,trees" alt="">
+            </div>
+            <div class="caption">
+                <h3>Photo One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="imgs">
+                <img src="https://source.unsplash.com/1600x900/?nature,butterfly" alt="">
+            </div>
+            <div class="caption">
+                <h3>Photo One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="imgs">
+                <img src="https://source.unsplash.com/1600x900/?nature,birds" alt="">
+            </div>
+            <div class="caption">
+                <h3>Photo One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Feel Free To Contact Us</h3>
+        <p>Email or call us to set up a consult</p>
+        <p>Email: 
+            <strong>xxxx@gmail.com</strong>
+        </p>
+        <p>Contact:
+            <strong>(617) 555-5555</strong>
+        </p>
+    </div>
+</body>
+
+</html>
